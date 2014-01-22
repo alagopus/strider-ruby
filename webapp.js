@@ -9,7 +9,7 @@ module.exports = {
     */
     test: {
       type: String,
-      enum: ['none', 'bundle exec rspec'],
+      enum: ['none', 'bundle exec rspec', 'bundle exec rake test'],
       default: 'bundle exec rspec'
     },
     prepare: {
