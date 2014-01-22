@@ -1,0 +1,35 @@
+{
+  "name": "strider-ruby",
+  "version": "0.0.1",
+  "description": "Ruby support for Strider Continuous Deployment",
+  "scripts": {
+    "test": "jshint && mocha -R tap"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/michaelmior/strider-ruby.git"
+  },
+  "keywords": [
+    "strider",
+    "ruby"
+  ],
+  "strider": {
+    "type": "job",
+    "id": "ruby",
+    "title": "Ruby",
+    "webapp": "webapp.js",
+    "worker": "worker.js",
+    "icon": "icon.png",
+    "config": true
+  },
+  "author": "Michael Mior",
+  "license": "BSD",
+  "dependencies": {
+    "strider-detection-rules": "0.0.1"
+  },
+  "devDependencies": {
+    "chai": "~1.8.1",
+    "jshint": "~2.3.0",
+    "mocha": "~1.14.0"
+  }
+}
