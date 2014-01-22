@@ -31,6 +31,7 @@ module.exports = {
       prepare = shellCommand(config.prepare)
     }
     done(null, {
+      env: { 'GEM_PATH': '/app/vendor/bundle/ruby/2.0.0'}, // For Heroku
       prepare: prepare,
       test: test
     })
