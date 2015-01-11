@@ -30,7 +30,7 @@ module.exports = {
         }
         
         context.cmd('bundle install', function (err) {
-          done(err, true)''
+          done(err, true);
         });
     }
     
